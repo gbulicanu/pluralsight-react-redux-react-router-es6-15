@@ -7,7 +7,16 @@
     "prestart:api": "node tools/createMockDb.js",
     "start:api": "node tools/apiServer.js",
     "test:ci": "jest --coverage && coveralls < coverage/lcov.info",
-    "test": "jest --watch"
+    "test:local": "jest --coverage",
+    "test": "jest --watch",
+    "clean:build": "rimraf ./build && mkdir build",
+    "prebuild": "run-p clean:build test:ci",
+    "build": "webpack --config webpack.config.prod.js",
+    "prebuildlocal": "run-p clean:build test:local",
+    "buildlocal": "webpack --config webpack.config.prod.js",
+    "postbuildlocal": "run-p start:api serve:build",
+    "postbuild": "run-p start:api serve:build",
+    "serve:build": "http-server ./build"
   },
   "jest": {
     "setupFiles": [
