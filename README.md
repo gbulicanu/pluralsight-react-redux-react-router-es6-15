@@ -1,6 +1,6 @@
 # Starter Kit for [Building Applications in React and Redux](http://www.pluralsight.com/author/cory-house) on Pluralsight
 
-![CI](https://github.com/gbulicanu/pluralsight-react-redux-react-router-es6-15/workflows/CI/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/gbulicanu/pluralsight-react-redux-react-router-es6-15/badge.svg?branch=master)](https://coveralls.io/github/gbulicanu/pluralsight-react-redux-react-router-es6-14?branch=master)
+![CI](https://github.com/gbulicanu/pluralsight-react-redux-react-router-es6-15/workflows/CI/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/gbulicanu/pluralsight-react-redux-react-router-es6-15/badge.svg?branch=master)](https://coveralls.io/github/gbulicanu/pluralsight-react-redux-react-router-es6-15?branch=master)
 
 ## Get Started
 
